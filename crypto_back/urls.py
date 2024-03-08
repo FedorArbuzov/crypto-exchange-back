@@ -19,6 +19,6 @@ from deals import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('exchanges/', views.exchanges),
-    path('create_order/', views.create_order),
+    path('api/exchanges/', views.exchanges),
+    path('api/create_order/', views.create_order),
 ]
