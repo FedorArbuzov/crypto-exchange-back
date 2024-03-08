@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-copf37#x_ure(4mm4g)@6nvcp@!wvql%x=vbuh$sqr=y4i1j#0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cashcultchange.com']
+ALLOWED_HOSTS = ['cashcultchange.com', '127.0.0.1']
 
 
 # Application definition
