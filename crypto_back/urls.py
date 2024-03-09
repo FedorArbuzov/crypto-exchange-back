@@ -18,7 +18,7 @@ from django.urls import path, include
 from deals import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('api/admin/', admin.site.urls),
     path('api/exchanges/', views.exchanges),
     path('api/create_order/', views.create_order),
 ]
