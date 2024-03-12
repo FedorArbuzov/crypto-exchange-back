@@ -3,12 +3,13 @@ import json
 from django.shortcuts import render
 from django.http.response import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.cache import cache_page
 
 from deals.models import Orders
 from deals.utils.get_exchanges import get_exchange_rate
 
 
-
+@cache_page(60 * 2)
 def exchanges(request):
     return JsonResponse(get_exchange_rate())
 
